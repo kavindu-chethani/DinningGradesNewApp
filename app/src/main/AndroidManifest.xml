@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DinningGradesNewApp">
         <activity
+            android:name=".TableUserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".TableView"
+            android:exported="false" />
+        <activity
+            android:name=".TableReserve"
+            android:exported="false" />
+        <activity
+            android:name=".ReservedTable"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

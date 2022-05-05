@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableReserve"
+    android:background="@drawable/home_back">
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="493dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_details"
+        app:layout_constraintVertical_bias="0.322"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DetailsCard"
+                android:layout_width="324dp"
+                android:layout_height="431dp"
+                android:layout_below="@id/pay_details"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="#707070"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_round"
+                    android:focusableInTouchMode="false"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+
+                    <EditText
+                        android:id="@+id/txtname"
+                        android:layout_width="265dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:hint="Table No"
+                        android:minLines="2"
+                        android:textColor="#FDFCFC"
+                        android:textColorHint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Floor"
+                        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:minLines="2"
+                        android:textColor="#FDFCFC"
+                        android:textColorHint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtNic"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="No of Guest"
+                        android:minLines="2"
+                        android:textColorHint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,
+              SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Date"
+                        android:minLines="2"
+                        android:textColor="#FAF9F9"
+                        android:textColorHint="#FAF7F7"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,
+              SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                    <EditText
+                        android:id="@+id/txttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Time"
+                        android:minLines="2"
+                        android:textColor="#FAF9F9"
+                        android:textColorHint="#FAF7F7"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtTPrice"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:text="Reserve a table"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/pay_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tabel Reservation Details"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="35dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
