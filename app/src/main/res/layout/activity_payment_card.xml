@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorSecondary"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".paymentCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-23dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Card\nDetails"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="28sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_login_hero" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/colorOnPrimary"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/editTextCardDetails1"
+                        style="@style/modifiedEditText"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#FFFEFE"
+                        android:text="Name :- V Wickramasekara\nCard No :- 23146745789\nExpire Date :- 12/25\nCVV :- 386\nBank:- Sampath"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/cirDeleteButton1"
+                        style="@style/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/loginViewsMargin"
+                        android:text="@string/Delete_button" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cirPayButton1"
+                            style="@style/loginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/loginViewsMargin"
+                            android:text="@string/Pay_button" />
+
+                        <Button
+                            android:id="@+id/cirUpdateButton1"
+                            style="@style/loginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/loginViewsMargin"
+                            android:text="@string/Update_button"
+                            android:onClick="onUpdateClick"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/colorOnPrimary"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/editTextCardDetails2"
+                            style="@style/modifiedEditText"
+                            android:layout_margin="8dp"
+                            android:backgroundTint="#FFFEFE"
+                            android:text="Name :- N Amarasinghe\nCard No :- 23167845389\nExpire Date :- 06/24\nCVV :- 110\nBank:- BOC"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <Button
+                            android:id="@+id/cirDeleteButton2"
+                            style="@style/loginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/loginViewsMargin"
+                            android:text="@string/Delete_button" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cirPayButton2"
+                            style="@style/loginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/loginViewsMargin"
+                            android:text="@string/Pay_button" />
+
+                        <Button
+                            android:id="@+id/cirUpdateButton2"
+                            style="@style/loginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/loginViewsMargin"
+                            android:text="@string/Update_button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
