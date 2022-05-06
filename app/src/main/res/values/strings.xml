@@ -9,4 +9,18 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="Name">Name</string>
+    <string name="Contact_Number">Contact Number</string>
+    <string name="Owner_Name">Card Holder</string>
+    <string name="Card_Number">Card Number</string>
+    <string name="Expire_Date">Expire Date</string>
+    <string name="CVV">CVV</string>
+    <string name="Bank">Bank</string>
+    <string name="Update_button">Update</string>
+    <string name="Delete_button">Delete</string>
+    <string name="Pay_button">Pay Now</string>
+
 </resources>
