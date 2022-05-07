@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TableView"
+    tools:context=".controllers.TableView"
     android:background="@drawable/home_back"
     >
 
@@ -141,7 +141,7 @@
         android:layout_height="55dp"
         android:layout_margin="50dp"
         android:layout_marginTop="36dp"
-        android:text="Tabel Reservation"
+        android:text="Table Reservation"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30dp"

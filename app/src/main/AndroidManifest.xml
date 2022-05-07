@@ -10,22 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DinningGradesNewApp">
         <activity
-            android:name=".TableUserDetails"
+            android:name=".controllers.TableUserDetails"
             android:exported="false" />
         <activity
-            android:name=".TableView"
+            android:name=".controllers.TableView"
             android:exported="false" />
         <activity
-            android:name=".TableReserve"
+            android:name=".controllers.TableReserve"
             android:exported="false" />
         <activity
-            android:name=".ReservedTable"
+            android:name=".controllers.ReservedTable"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".controllers.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controllers.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
