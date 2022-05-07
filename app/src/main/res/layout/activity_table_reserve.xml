@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TableReserve"
+    tools:context=".controllers.TableReserve"
     android:background="@drawable/home_back">
 
     <ScrollView
@@ -125,7 +125,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Tabel Reservation Details"
+        android:text="Table Reservation Details"
         android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"

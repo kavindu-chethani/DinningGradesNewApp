@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "114496142312",
+    "project_id": "dinninggrades-f1bc1",
+    "storage_bucket": "dinninggrades-f1bc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114496142312:android:1f482e061f9afe80e4c25d",
+        "android_client_info": {
+          "package_name": "com.example.dinninggradesnewapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114496142312-kp7dq5e06tfm9fv93gknaa5sei7h4icl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK9pHMzVd7xBAdgNOgIxreiNuzKKXurls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114496142312-kp7dq5e06tfm9fv93gknaa5sei7h4icl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
