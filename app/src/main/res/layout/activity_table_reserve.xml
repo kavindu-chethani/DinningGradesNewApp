@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controllers.TableReserve"
-    android:background="@drawable/home_back">
+    tools:context=".TableReserve"
+    android:background="@drawable/homebacknew">
 
     <ScrollView
-        android:layout_width="350dp"
-        android:layout_height="493dp"
+        android:layout_width="355dp"
+        android:layout_height="556dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.352"
@@ -44,11 +44,10 @@
 
 
                     <EditText
-                        android:id="@+id/txtname"
+                        android:id="@+id/txtTNo"
                         android:layout_width="265dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="20dp"
-                        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
                         android:hint="Table No"
                         android:minLines="2"
                         android:textColor="#FDFCFC"
@@ -56,19 +55,18 @@
                         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <EditText
-                        android:id="@+id/txtContactNo"
+                        android:id="@+id/txtFloor"
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginTop="20dp"
                         android:hint="Floor"
-                        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
                         android:minLines="2"
                         android:textColor="#FDFCFC"
                         android:textColorHint="#FFFFFF"
                         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <EditText
-                        android:id="@+id/txtNic"
+                        android:id="@+id/txtNofGuest"
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginTop="20dp"
@@ -116,7 +114,17 @@
                 android:text="Reserve a table"
                 android:textColor="#000000" />
 
-
+            <Button
+                android:id="@+id/next"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/submit"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:text="Goto reserved table details"
+                android:textColor="#000000" />
         </LinearLayout>
     </ScrollView>
 
@@ -132,4 +140,5 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="35dp"
         tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

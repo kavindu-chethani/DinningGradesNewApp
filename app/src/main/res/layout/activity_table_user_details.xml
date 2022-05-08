@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controllers.TableUserDetails"
-    android:background="@drawable/home_back">
+    tools:context=".TableUserDetails"
+    android:background="@drawable/homebacknew">
 
     <TextView
         android:id="@+id/pay_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="469dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="User Details"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="-50dp" />
 
     <ScrollView
-        android:layout_width="350dp"
-        android:layout_height="493dp"
+        android:layout_width="349dp"
+        android:layout_height="564dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.352"
@@ -30,96 +30,108 @@
         app:layout_constraintTop_toBottomOf="@+id/pay_details"
         app:layout_constraintVertical_bias="0.322"
         tools:ignore="MissingConstraints">
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="350dp"
-        android:layout_height="505dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="123dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/DetailsCard"
-            android:layout_width="324dp"
-            android:layout_height="431dp"
-            android:layout_below="@id/pay_details"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            app:cardBackgroundColor="#707070"
-            app:cardCornerRadius="16dp">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="505dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.378"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="123dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DetailsCard"
+                android:layout_width="324dp"
+                android:layout_height="431dp"
+                android:layout_below="@id/pay_details"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="#707070"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_round"
+                    android:focusableInTouchMode="false"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+
+                    <EditText
+                        android:id="@+id/txtname"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="30dp"
+                        android:hint="User Name"
+                        android:minLines="2"
+                        android:textColor="#FDFCFC"
+                        android:textColorHint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="30dp"
+                        android:hint="Contact Number"
+                        android:minLines="2"
+                        android:textColor="#FDFCFC"
+                        android:textColorHint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtNic"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="30dp"
+                        android:hint="NIC"
+                        android:minLines="2"
+                        android:textColorHint="#FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="30dp"
+                        android:hint="Email"
+                        android:minLines="2"
+                        android:textColor="#FAF9F9"
+                        android:textColorHint="#FAF7F7"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="215dp"
                 android:layout_height="match_parent"
+                android:layout_below="@+id/txtTPrice"
                 android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
-                android:focusableInTouchMode="false"
-                android:orientation="vertical"
-                android:padding="30dp">
+                android:text="Submit Details"
+                android:textColor="#000000" />
 
+            <Button
+                android:id="@+id/next"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/submit"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:text="Goto table reservation"
+                android:textColor="#000000" />
 
-                <EditText
-                    android:id="@+id/txtname"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:layout_marginTop="30dp"
-                    android:hint="User Name"
-                    android:minLines="2"
-                    android:textColor="#FDFCFC"
-                    android:textColorHint="#FFFFFF"
-                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/txtContactNo"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:layout_marginTop="30dp"
-                    android:hint="Contact Number"
-                    android:minLines="2"
-                    android:textColor="#FDFCFC"
-                    android:textColorHint="#FFFFFF"
-                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/txtNic"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:layout_marginTop="30dp"
-                    android:hint="NIC"
-                    android:minLines="2"
-                    android:textColorHint="#FFFFFF"
-                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/txtEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:layout_marginTop="30dp"
-                    android:hint="Email"
-                    android:minLines="2"
-                    android:textColor="#FAF9F9"
-                    android:textColorHint="#FAF7F7"
-                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="215dp"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/txtTPrice"
-            android:layout_gravity="center"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_round"
-            android:text="Submit Details"
-            android:textColor="#000000" />
-
-
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 
