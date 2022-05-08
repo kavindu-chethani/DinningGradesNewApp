@@ -5,11 +5,15 @@
       <map>
         <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
         <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_reserved_table.xml" value="0.22826086956521738" />
+        <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_new_reserved.xml" value="0.25" />
+        <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_reserved_table.xml" value="0.1" />
         <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_table_reserve.xml" value="0.22826086956521738" />
-        <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_table_user_details.xml" value="0.22826086956521738" />
+        <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_table_user_details.xml" value="0.1" />
         <entry key="..\:/MAD_Project/app/src/main/res/layout/activity_table_view.xml" value="0.22826086956521738" />
         <entry key="..\:/MAD_Project/app/src/main/res/layout/content_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/MAD_Project/app/src/main/res/layout/dialogcontent.xml" value="0.25" />
+        <entry key="..\:/MAD_Project/app/src/main/res/layout/sample.xml" value="0.16077898550724637" />
+        <entry key="..\:/MAD_Project/app/src/main/res/layout/single_row.xml" value="0.25" />
       </map>
     </option>
   </component>
