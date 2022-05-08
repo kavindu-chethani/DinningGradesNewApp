@@ -1,8 +1,10 @@
-package com.example.dinninggradesnewapp;
+package com.example.dinninggradesnewapp.controllers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.dinninggradesnewapp.R;
 
 public class ReservedTable extends AppCompatActivity {
 
