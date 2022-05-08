@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/payment"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".profileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-23dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Welcome\nTo Your\nProfile"
+                    android:textColor="@color/colorOnSecondary"
+                    android:textSize="27sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_login_hero" />
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/FullNameTitle"
+                        style="@style/modifiedEditText"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#FFFEFE"
+                        android:text="Full Name : "
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/FullName"
+                        style="@style/modifiedEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/FullNameTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/FullNameTitle" />
+
+                    <TextView
+                        android:id="@+id/EmailTitle"
+                        style="@style/modifiedEditText"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#FFFEFE"
+                        android:text="Email : "
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/Email"
+                        style="@style/modifiedEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/EmailTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/EmailTitle" />
+
+                    <TextView
+                        android:id="@+id/ContactTitle"
+                        style="@style/modifiedEditText"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#FFFEFE"
+                        android:text="Contact : "
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/Contact"
+                        style="@style/modifiedEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/ContactTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/ContactTitle" />
+
+
+                    <Button
+                        android:id="@+id/cirPNextButton"
+                        style="@style/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginBottom="25dp"
+                        android:onClick="onPNextClick"
+                        android:text="next" />
+
+                    <Button
+                        android:id="@+id/cirLogoutButton"
+                        style="@style/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Logout" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
