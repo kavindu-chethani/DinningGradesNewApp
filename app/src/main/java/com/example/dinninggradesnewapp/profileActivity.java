@@ -1,4 +1,7 @@
-package com.example.dinninggradesnewapp;
+package com.example.projectmad;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,9 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -37,7 +37,7 @@ public class profileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(profileActivity.this, loginActivity.class));
+                startActivity(new Intent(profileActivity.this, com.example.projectmad.loginActivity.class));
             }
         });
 
@@ -52,7 +52,7 @@ public class profileActivity extends AppCompatActivity {
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                com.example.projectmad.user userProfile = snapshot.getValue(com.example.projectmad.user.class);
+                user userProfile = snapshot.getValue(user.class);
 
                 if (userProfile != null){
                     String fullName = userProfile.fullName;
@@ -84,4 +84,3 @@ public class profileActivity extends AppCompatActivity {
 
     }
 }
-
