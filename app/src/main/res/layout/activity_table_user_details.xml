@@ -11,24 +11,24 @@
         android:id="@+id/pay_details"
         android:layout_width="469dp"
         android:layout_height="65dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="User Details"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-50dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="349dp"
-        android:layout_height="564dp"
+        android:layout_width="353dp"
+        android:layout_height="602dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pay_details"
-        app:layout_constraintVertical_bias="0.322"
+        app:layout_constraintVertical_bias="0.325"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
