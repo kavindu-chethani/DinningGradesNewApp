@@ -45,7 +45,7 @@ public class TableReserve extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TableReserve.this, NewReserved.class);
+                Intent intent = new Intent(TableReserve.this, ReservedTable.class);
                 startActivity(intent);
             }
         });
