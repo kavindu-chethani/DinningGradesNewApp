@@ -4,68 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReservedTable"
     android:background="@drawable/homebacknew">
 
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="293dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="2dp"
-        android:text="Rserved Table Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Reserved Table Details"
         android:textColor="@color/white"
-        android:textSize="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="35dp"/>
 
     <ImageView
         android:id="@+id/secondimage"
-        android:layout_width="191dp"
-        android:layout_height="161dp"
+        android:layout_width="179dp"
+        android:layout_height="99dp"
         android:layout_margin="10dp"
+        android:layout_marginStart="24dp"
         android:src="@drawable/first"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="107dp"
-        android:layout_height="98dp"
-        android:orientation="vertical"
-
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent">
-
-
-    </LinearLayout>
-
+        tools:layout_editor_absoluteY="109dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/DetailsCard"
-        android:layout_width="312dp"
-        android:layout_height="506dp"
-        android:layout_marginBottom="28dp"
-        app:cardBackgroundColor="#707070"
+        android:layout_width="273dp"
+        android:layout_height="383dp"
         app:cardCornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondimage"
+        app:layout_constraintVertical_bias="0.485">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recview"
-            android:layout_width="166dp"
-            android:layout_height="347dp" />
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recview"
+                android:layout_width="match_parent"
+                android:layout_height="397dp" />
+        </ScrollView>
     </androidx.cardview.widget.CardView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
