@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Update Table reservation details"
-
+        android:background="#FF8F10"
         android:textSize="25sp"
         android:gravity="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <EditText
         android:layout_width="match_parent"
