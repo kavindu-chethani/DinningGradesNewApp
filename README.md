@@ -6,6 +6,13 @@ And also customer can reserve a table for delicious meals at the Dinning Grades.
 
 Second Year Final Group Project of Sri Lanka Institute of Information Technology for the module Mobile Application Development. (SLIIT).
 <br/><br/><br/>
+ 
+
+https://user-images.githubusercontent.com/46352484/171062454-d408c6f1-64a2-4980-a550-6ddc1aa33805.mp4
+
+
+<br/>
+
 Team members :
 <br/>
 Kavindu Chethani
